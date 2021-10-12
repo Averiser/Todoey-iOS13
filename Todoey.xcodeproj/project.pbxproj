@@ -73,6 +73,7 @@
 		EB2BE4ED239524DB00FB933B = {
 			isa = PBXGroup;
 			children = (
+				E4A117242714816700F8F941 /* Data Model */,
 				EB2BE4F8239524DB00FB933B /* Todoey */,
 				EB2BE4F7239524DB00FB933B /* Products */,
 			);
@@ -94,7 +95,6 @@
 				E4A117262714818D00F8F941 /* Views */,
 				E4A11727271481A400F8F941 /* Supporting Files */,
 				EB2BE507239524DC00FB933B /* Info.plist */,
-				E4A117242714816700F8F941 /* Data Model */,
 			);
 			path = Todoey;
 			sourceTree = "<group>";
