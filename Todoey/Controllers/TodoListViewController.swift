@@ -18,7 +18,7 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      print(dataFilePath)
+      print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
       
 //      if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
 //        itemArray = items
