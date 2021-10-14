@@ -20,10 +20,6 @@ class TodoListViewController: UITableViewController {
       
       print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
       
-//      if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
-//        itemArray = items
-//      }
-      
       loadItems()
     }
   
@@ -40,20 +36,8 @@ class TodoListViewController: UITableViewController {
     let item = itemArray[indexPath.row]
     
     cell.textLabel?.text = item.title
+    cell.accessoryType = item.done ? .checkmark : .none
     
-    //ternary operator condition
-    // value = condition ? valueIfTrue : valueIfFalse
-    
-//    cell.accessoryType = item.done == true ? .checkmark : .none     or even shorter
-      cell.accessoryType = item.done ? .checkmark : .none
-    
-    //  this five line below are exactly the same is one line above.
-    
-//    if item.done == true {
-//      cell.accessoryType = .checkmark
-//    } else {
-//      cell.accessoryType = .none
-//    }
     
     return cell
   }
@@ -61,17 +45,12 @@ class TodoListViewController: UITableViewController {
   //MARK - TableView Delegate Methods
   
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//    print(itemArray[indexPath.row])
+    
+//    context.delete(itemArray[indexPath.row])
+//    itemArray.remove(at: indexPath.row)
     
     itemArray[indexPath.row].done = !itemArray[indexPath.row].done
-    
-    //this single line above is the same/replaces the five line below.
-    
-//    if itemArray[indexPath.row].done == false {
-//      itemArray[indexPath.row].done = true
-//    } else {
-//      itemArray[indexPath.row].done = false
-//    }
+  
     saveItems()
     tableView.deselectRow(at: indexPath, animated: true)
   }
