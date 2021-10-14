@@ -107,5 +107,13 @@ class TodoListViewController: UITableViewController {
       print("Error fetching data from context \(error)")
     }
   }
+
+}
+
+extension TodoListViewController: UISearchBarDelegate {
+  
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    <#code#>
+  }
 }
 
