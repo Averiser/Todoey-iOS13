@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -120,8 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				EB2BE4F9239524DB00FB933B /* AppDelegate.swift */,
-				E4A117242714816700F8F941 /* Data Model */,
 				E4A117252714817B00F8F941 /* Controllers */,
+				E4A117242714816700F8F941 /* Data Model */,
 				E4A117262714818D00F8F941 /* Views */,
 				E4A11727271481A400F8F941 /* Supporting Files */,
 				EB2BE507239524DC00FB933B /* Info.plist */,
